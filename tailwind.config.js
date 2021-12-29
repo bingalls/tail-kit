@@ -1,15 +1,8 @@
 module.exports = {
   important: true,
-  // Active dark mode on class basis
-  darkMode: "class",
-  i18n: {
-    locales: ["en-US"],
-    defaultLocale: "en-US",
-  },
-  purge: {
-    content: ["./pages/**/*.tsx", "./components/**/*.tsx"],
-    // These options are passed through directly to PurgeCSS
-  },
+  darkMode: 'class',
+  i18n: { locales: ['en-US'], defaultLocale: 'en-US' },
+  purge: { content: ['./pages/**/*.tsx', './components/**/*.tsx'] },
   theme: {
     extend: {
       backgroundImage: (theme) => ({
@@ -19,15 +12,7 @@ module.exports = {
     },
   },
   variants: {
-    extend: {
-      backgroundColor: ["checked"],
-      borderColor: ["checked"],
-      inset: ["checked"],
-      zIndex: ["hover", "active"],
-    },
+    extend: { backgroundColor: ['checked'], borderColor: ['checked'], inset: ['checked'], zIndex: ['hover', 'active'] },
   },
-  plugins: [],
-  future: {
-    purgeLayersByDefault: true,
-  },
-};
+  future: { purgeLayersByDefault: true },
+}
